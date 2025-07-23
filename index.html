@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NODS</title>
      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script>
+<!-- <script>
   document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
-</script>
+</script> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -113,7 +112,7 @@
                 <div class="projects-grid">
                     <div class="project-item humanitarian">
                         <div class="project-image">
-                            <img src="image/p1.jfif" alt="توزيع السلال الغذائية">
+                            <img src="image/p1.jfif" alt="">
                         </div>
                         <div class="project-content">
                             <h3>التوعية بالنطام المدني </h3>
@@ -127,7 +126,7 @@
                     
                     <div class="project-item education">
                         <div class="project-image">
-                            <img src="image/p2.jpg" alt="إعادة تأهيل المدارس">
+                            <img src="image/p2.jpg" alt="">
                         </div>
                         <div class="project-content">
                             <h3>تعزيز السلم والامن المجتمعي</h3>
@@ -141,7 +140,7 @@
                     
                     <div class="project-item health">
                         <div class="project-image">
-                            <img src="image/p3.jfif" alt="العيادات المتنقلة">
+                            <img src="image/p3.jfif" alt="">
                         </div>
                         <div class="project-content">
                             <h3>الديمقراطية وحقوق الإنسان</h3>
@@ -169,7 +168,7 @@
                 </div>
                 
                 <div class="text-center">
-                    <a href="projects.html" class="progect-btn">عرض جميع المشاريع</a>
+                    <a href="project.html" class="progect-btn">عرض جميع المشاريع</a>
                 </div>
             </div>
         </section>
@@ -208,23 +207,47 @@
         </section>
 
  <section id="sendme">
-  <h2>تواصل معنا</h2>
-    <p>نحن هنا للإجابة على استفساراتك واقتراحاتك</p>
-  <form>
-    <div class="input-icon">
-      <i class="fas fa-user"></i>
-      <input type="text" placeholder="اسمك" required>
-    </div>
-    <div class="input-icon">
-      <i class="fas fa-envelope"></i>
-      <input type="email" placeholder="إيميلك" required>
-    </div>
-    <div class="input-icon">
-      <i class="fas fa-comment-dots"></i>
-      <textarea rows="5" placeholder="رسالتك" required></textarea>
-    </div>
-    <button type="submit"><i class="fas fa-paper-plane"></i> إرسال</button>
-  </form>
+  <h2>اقتراحاتك</h2>
+    <p>رائيكم يُهمنا </p>
+  <form id="contactForm">
+  <div class="input-icon">
+    <i class="fas fa-user"></i>
+    <input type="text" id="contact-name" placeholder="اسمك" required>
+  </div>
+  <div class="input-icon">
+    <i class="fas fa-envelope"></i>
+    <input type="email" id="contact-email" placeholder="إيميلك" required>
+  </div>
+  <div> <select id="topic" required >
+  <option value="">-- اختر الموضوع --</option>
+  <option value="استفسار">استفسار</option>
+  <option value="مقترح">مقترح</option>
+  <option value="شكوى">شكوى</option>
+  <option value="تطوع">تطوع</option>
+  <option value="تبرع">تبرع</option>
+</select></div>
+  <div class="input-icon">
+    <i class="fas fa-comment-dots"></i>
+   
+    <textarea id="message" rows="5" placeholder="رسالتك" required></textarea>
+  </div>
+  <button type="submit"><i class="fas fa-paper-plane"></i> إرسال</button>
+</form>
+</section>
+<section>
+ <div id="success"><i class="fa-solid fa-check"></i> تم إرسال الرسالة بنجاح!</div>
+ <div>
+  <button class="filter" onclick="filterCards('all')">الكل</button>
+  <button class="filter" onclick="filterCards('استفسار')">استفسار</button>
+  <button class="filter" onclick="filterCards('مقترح')">مقترح</button>
+  <button class="filter" onclick="filterCards('شكوى')">شكوى</button>
+  <button class="filter" onclick="filterCards('تطوع')">تطوع</button>
+  <button class="filter" onclick="filterCards('تبرع')">تبرع</button>
+</div>
+
+</section>
+<section>
+      <div id="messagesContainer"></div>
 </section>
 
    </main>
@@ -259,7 +282,7 @@
             </div>
             
             <div class="footer-col">
-                <h4>تواصل معنا</h4>
+                <h4 >تواصل معنا</h4>
                 <ul class="contact-info">
                     <li><i class="fas fa-map-marker-alt"></i> صنعاء، اليمن</li>
                     <li><i class="fas fa-phone-alt"></i> +967 1 234 567</li>
@@ -294,8 +317,8 @@
       </ul>
    </footer> -->
 
-   <script src="js/main.js">
-
-   </script>
+   <script src="js/main.js"></script>
+    <script src="js/them.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

@@ -4,12 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NODS</title>
      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script>
+<!-- <script>
   document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
-</script>
+</script> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,10 +24,12 @@
         <nav>
         <ul>
 
-
+           <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        <i id="themeIcon" class="fas fa-moon"></i> 
+        </button>
       
         <li><a href="index.html">الرئبسيه</a></li>
-        <li><a href="about.html" >من نحن؟</a></li>
+        <li><a href="we.html" >من نحن؟</a></li>
         <li><a href="# " class="active">مشاريعنا</a></li>
         <li><a href="#">أخر الاخبار</a></li>
         <li><a href="callme.html">تواصل معنا</a></li>
@@ -49,28 +50,29 @@
         <section class="projects-section">
             <div class="container">
                 <div class="projects-filter">
-                    <button class="filter-btn active" data-filter="all">الكل</button>
-                    <button class="filter-btn" data-filter="education">التعليم</button>
-                    <button class="filter-btn" data-filter="health">الصحة</button>
-                    <button class="filter-btn" data-filter="women">تمكين المرأة</button>
-                    <button class="filter-btn" data-filter="development">التنمية</button>
-                </div>
+  <input type="text" id="searchInput" placeholder="ابحث عن مشروع..." aria-label="بحث" />
+  <button class="filter-btn active" data-filter="all">الكل</button>
+  <button class="filter-btn" data-filter="education">التعليم</button>
+  <button class="filter-btn" data-filter="health">الصحة</button>
+  <button class="filter-btn" data-filter="women">تمكين المرأة</button>
+  <button class="filter-btn" data-filter="development">التنمية</button>
+</div>
 
                 <div class="projects-grid">
                     <!-- مشاريع سيتم إضافتها عبر JavaScript -->
                 </div>
-
+<!-- 
                 <div class="pagination">
                     <button class="page-btn disabled">السابق</button>
                     <button class="page-btn active">1</button>
                     <button class="page-btn">2</button>
                     <button class="page-btn">3</button>
                     <button class="page-btn">التالي</button>
-                </div>
+                </div> -->
             </div>
         </section>
 
-        <section class="impact-section">
+        <!-- <section class="impact-section">
             <div class="container">
                 <div class="impact-grid">
                     <div class="impact-item">
@@ -87,7 +89,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
  
      <footer class="footer">
@@ -143,9 +145,8 @@
         </div>
     </div>
 </footer>
-  
- <script src="js/main.js">
-
-   </script>
+ 
+     <script src="js/them.js"></script>
+     <script src="js/projects.js"></script>
 </body>
 </html>

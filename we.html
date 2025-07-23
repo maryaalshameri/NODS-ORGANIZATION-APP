@@ -1,115 +1,124 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NODS</title>
-     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script>
-  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
-</script>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>من نحن - NODS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <script>
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
+  </script> -->
 </head>
 <body>
-   <header class="main-header">
-        <div class="logo">
-        <img src="image/logo.png"  class="logo" alt="" />
-        </div>
-        <button class="menu-toggle" aria-label="Toggle menu">
-        <i class="fas fa-bars"></i>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="image/logo.png" class="logo" alt="شعار NODS" />
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    <nav>
+      <ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        <i id="themeIcon" class="fas fa-moon"></i> 
         </button>
-
-
-        <nav>
-        <ul>
- 
-      
-        <li><a href="index.html">الرئبسيه</a></li>
-        <li><a href="about.html" class="active">من نحن؟</a></li>
-        <li><a href="project.html">مشاريعنا</a></li>
-        <li><a href="#">أخر الاخبار</a></li>
-        <li><a href="callme.html">تواصل معنا</a></li>
-        
        
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#" class="active">من نحن؟</a></li>
+        <li><a href="project.html">مشاريعنا</a></li>
+        <li><a href="#">أخر الأخبار</a></li>
+        <li><a href="callme.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </ul>
-        </nav>
-     </header>
+  <!-- Main Content -->
+  <main class="about-page">
+    <section class="about-intro">
+      <h2>من نحن؟</h2>
+      <p>المنظمة الوطنية لتنمية المجتمع (NODS) هي منظمة يمنية غير ربحية تسعى إلى تمكين المجتمع وتحقيق التنمية المستدامة.</p>
+    </section>
 
- <main class="about-page">
-        <section class="hero-section">
-            <div class="container">
-                <h1>من نحن</h1>
-                <p>نظرة عامة على تاريخنا ورسالتنا</p>
-            </div>
-        </section>
+    <section class="mission-vision">
+      <div class="box">
+        <h3>الرؤية</h3>
+        <p>مجتمع يمني متطور يتمتع أفراده بحياة كريمة في ظل تنمية عادلة وشاملة.</p>
+      </div>
+      <div class="box">
+        <h3>الرسالة</h3>
+        <p>تمكين المجتمعات من خلال برامج تنموية مستدامة، بناء القدرات، والشراكة الفعالة.</p>
+      </div>
+      <div class="box">
+        <h3>الأهداف</h3>
+         <p>تمكين المرأة والشباب.</p>
+         <p>تعزيز التعليم والرعاية الصحية.</p>
+         <p> مكافحة الفقر والبطالة.</p>
+         
+        
+      </div>
+    </section>
 
-        <section class="history-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>تاريخنا</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="year">1997</div>
-                            <div class="content">
-                                <h3>التأسيس</h3>
-                                <p>تأسيس مركز الصديق للتأهيل بترخيص من وزارة التربية والتعليم</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="year">2006</div>
-                            <div class="content">
-                                <h3>التحول</h3>
-                                <p>تحولنا إلى المنظمة الوطنية لتنمية المجتمع (NODS YEMEN)</p>
-                            </div>
-                        </div>
-                        <!-- يمكن إضافة المزيد من المحطات -->
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="history">
+      <h2>تاريخنا</h2>
+      <div class="timeline">
+        <div class="event">
+          <h4>1997</h4>
+          <p>تأسيس المنظمة وبداية الأنشطة المجتمعية.</p>
+        </div>
+        <div class="event">
+          <h4>2006</h4>
+          <p>توسيع البرامج وتوقيع شراكات دولية.</p>
+        </div>
+      </div>
+    </section>
 
-        <section class="mission-section">
-            <div class="container">
-                <div class="mission-grid">
-                    <div class="mission-card">
-                        <i class="fas fa-bullseye"></i>
-                        <h3>الرؤية</h3>
-                        <p>مجتمع يمني متطور يتمتع أفراده بحياة كريمة</p>
-                    </div>
-                    <div class="mission-card">
-                        <i class="fas fa-hand-holding-heart"></i>
-                        <h3>الرسالة</h3>
-                        <p>تمكين المجتمعات عبر برامج التنمية المستدامة</p>
-                    </div>
-                    <div class="mission-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>الأهداف</h3>
-                        <p>تحسين جودة الحياة وتعزيز المشاركة المجتمعية</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- 🧑‍🤝‍🧑 قسم الفريق -->
+    <section class="team">
+      <h2>فريقنا</h2>
+      <button class="join-btn" id="openJoinModal">انضم إلينا</button>
+       <p id="alreadyJoinedMessage" style="display: none; color: green; font-weight: bold;">
+  لقد سجلت مسبقًا، شكرًا لانضمامك.
+</p>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="image/team1.jpg" alt="أ. محمد العريقي" />
+          <h4>أ. محمد العريقي</h4>
+          <p>المدير التنفيذي - خبير تنمية مجتمعية بخبرة 15 سنة.</p>
+        </div>
+        <div class="team-member">
+          <img src="image/team2.jpg" alt="م. ريم العواضي" />
+          <h4>م. ريم العواضي</h4>
+          <p>مديرة المشاريع - متخصصة في إدارة المشاريع التنموية.</p>
+        </div>
+        <div class="team-member">
+          <img src="image/team3.jpg" alt="د. خالد الصياد" />
+          <h4>د. خالد الصياد</h4>
+          <p>استشاري الصحة المجتمعية - خبرة في دعم المبادرات الصحية.</p>
+        </div>
+      </div>
+    </section>
+     <div id="joinModal" class="modals">
+    <div class="modal-content">
+      <span class="close-btn" id="closeJoinModal">&times;</span>
+      <h2>انضم إلينا</h2>
+      <form id="joinForm">
+        <input type="text" id="name" placeholder="الاسم" required />
+        <input type="email" id="email" placeholder="البريد الإلكتروني" required />
+        <button type="submit">إرسال</button>
+      </form>
+     <div id="successMessage" style="display:none;">تم التسجيل بنجاح!</div>
+    </div>
+    </div>
+  </div>
+  </main>
 
-        <section class="team-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>فريقنا</h2>
-                    <p>المحترفون الذين يجعلون مهمتنا ممكنة</p>
-                </div>
-                <div class="team-grid">
-                    <!-- يمكن إضافة أعضاء الفريق هنا -->
-                </div>
-            </div>
-        </section>
-    </main>
+ 
 
 
-
-
-     <footer class="footer">
+  <!-- Footer -->
+   <footer class="footer">
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
@@ -163,8 +172,9 @@
     </div>
 </footer>
   
- <script src="js/main.js">
+ 
+  <script src="js/them.js"></script>
 
-   </script>
+   
 </body>
 </html>

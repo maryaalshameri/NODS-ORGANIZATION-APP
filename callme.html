@@ -4,11 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NODS</title>
      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script>
+<!-- <script>
   document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
-</script>
+</script> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,7 +22,9 @@
 
         <nav>
         <ul>
-       
+       <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        <i id="themeIcon" class="fas fa-moon"></i> 
+        </button>
         <li><a href="index.html">الرئبسيه</a></li>
         <li><a href="we.html">من نحن؟</a></li>
         <li><a href="project.html">مشاريعنا</a></li>
@@ -77,21 +78,41 @@
         <section id="sendme">
   <h2>تواصل معنا</h2>
     <p>نحن هنا للإجابة على استفساراتك واقتراحاتك</p>
-  <form>
-    <div class="input-icon">
-      <i class="fas fa-user"></i>
-      <input type="text" placeholder="اسمك" required>
-    </div>
-    <div class="input-icon">
-      <i class="fas fa-envelope"></i>
-      <input type="email" placeholder="إيميلك" required>
-    </div>
-    <div class="input-icon">
-      <i class="fas fa-comment-dots"></i>
-      <textarea rows="5" placeholder="رسالتك" required></textarea>
-    </div>
-    <button type="submit"><i class="fas fa-paper-plane"></i> إرسال</button>
-  </form>
+<form id="contactForm">
+  <div class="input-icon">
+    <i class="fas fa-user"></i>
+    <input type="text" id="contact-name" placeholder="اسمك" required>
+  </div>
+  <div class="input-icon">
+    <i class="fas fa-envelope"></i>
+    <input type="email" id="contact-email" placeholder="إيميلك" required>
+  </div>
+  <div class="input-icon">
+    <i class="fas fa-comment-dots"></i>
+    <textarea id="message" rows="5" placeholder="رسالتك" required></textarea>
+  </div>
+  <button type="submit"><i class="fas fa-paper-plane"></i> إرسال</button>
+</form>
+
+  <!-- مكان رسالة النجاح -->
+
+<div id="success" style="color: green; display:none;"><i class="fa-solid fa-check"></i> تم إرسال الرسالة بنجاح!</div>
+
+<!-- مكان الجدول -->
+<table id="messageTable" border="1" style="width:100%; margin-top: 20px; display:none;">
+  <thead>
+    <tr>
+      <th>الاسم</th>
+      <th>الإيميل</th>
+      <th>الرسالة</th>
+    </tr>
+  </thead>
+  <tbody id="messageBody">
+    <!-- الصفوف ستُضاف هنا -->
+  </tbody>
+</table>
+
+
 </section>
 
         <section class="map-section">
@@ -163,8 +184,8 @@
     </div>
 </footer>
   
- <script src="js/main.js">
-
-   </script>
+ 
+  <script src="js/them.js"></script>
+  <script src="js/call.js"></script>
 </body>
 </html>
