@@ -9,7 +9,7 @@
   --header-shadow: rgba(0, 0, 0, 0.1);
    --btn-bg: #afb1ca ;
   --btn-text: #1f1f1f;
-  
+  --footer-color:#e0e0e0;
   --btn-bg-hover: #f0f0f0;
   --overlay-bg: rgba(0, 200, 215, 0.7);
   --mobile-nav-bg: #ffffff;
@@ -25,6 +25,7 @@
   --accent-color: #00ffe6;
   --highlight-color: #40e0d0;
   --header-shadow: rgba(255, 255, 255, 0.05);
+  --footer-color:#eeeeee;
  --btn-bg: #3c4747;
   --btn-text: #000000;
   --btn-bg-hover: #2e2e2e;
@@ -620,7 +621,8 @@ section {
       
 /* تذييل الصفحة */
 .footer {
-    background-color: var(--btn-bg);
+    /* background-color:; */
+    background: var(--footer-color);
     color:var(--btn-text);
     padding: 60px 0 0;
     position: relative;
@@ -1079,14 +1081,14 @@ footer ul {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
 }
 .modal {
-  background: white;
+  background: var(--bg-color);
   max-width: 500px;
   padding: 2rem;
   border-radius: 12px;
@@ -1106,7 +1108,7 @@ footer ul {
   cursor: pointer;
 }
 
-#about-me{background-color: var(--btn-bg);}
+#about-me,.mg-content{background-color: var(--btn-bg);}
 
 
 h1 {
