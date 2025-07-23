@@ -1088,7 +1088,7 @@ footer ul {
   z-index: 999;
 }
 .modal {
-  background: white;
+  background: var(--bg-color);
   max-width: 500px;
   padding: 2rem;
   border-radius: 12px;
