@@ -297,7 +297,8 @@ main
     /* padding: 80px 0; */
     background-color: var(--btn-bg);
   /* يسمح بالتمرير أفقيًا */
-overflow: hidden;
+  overflow-x: auto;
+   scroll-behavior: smooth;
 
 }
 
@@ -919,12 +920,17 @@ footer ul {
     }
 
 
+   .partners-section {
+    overflow-x: hidden; /* نخفي الـ scroll */
+  }
+
   .partners-slider {
-    animation: none;
-    flex-wrap: wrap;
+    animation: none;        /* نوقف الحركة */
+    flex-wrap: wrap;        /* نعرض العناصر في عدة صفوف */
     justify-content: center;
     width: 100%;
   }
+
 
 
 .partner-item {
