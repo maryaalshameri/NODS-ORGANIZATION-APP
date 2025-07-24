@@ -5,7 +5,7 @@ let projectData = [
     title: "مشروع التعليم في المناطق الريفية",
     category: "education",
     description: "دعم المدارس في المناطق النائية بمستلزمات التعليم.",
-    image: "image/j1.JPG",
+    image: "image/j1.jpg",
     date: "2015-02-20",
     location: "الحديدة"
   },
